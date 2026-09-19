@@ -1,11 +1,11 @@
 {
-  "id": "./hikizan.html",
+  "id": "./",
   "name": "ヒキザン｜予算管理",
   "short_name": "ヒキザン｜予算管理",
   "description": "「使っていい金額」を決めて、無理なくお金を管理する予算管理アプリ。予算から使った分を引いて、あといくら使えるかがすぐ分かります。",
   "lang": "ja",
   "dir": "ltr",
-  "start_url": "./hikizan.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",

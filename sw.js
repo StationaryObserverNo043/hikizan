@@ -1,10 +1,12 @@
 /* ヒキザン サービスワーカー
    ・アプリ本体とアイコンを端末に保存して、オフラインでも開けるようにします。
    ・家計データ（IndexedDB）には触りません。通信もしません。
+   ・アプリ本体は index.html です（GitHub Pages では https://ユーザー名.github.io/hikizan/ で開きます）。
    ・アプリを更新したときは、下の VERSION を書きかえてください（古い保存が入れかわります）。 */
 const VERSION = 'hikizan-v2';
+const PAGE = './index.html';
 const CORE = [
-  './hikizan.html',
+  PAGE,
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',
@@ -35,8 +37,8 @@ self.addEventListener('fetch', event => {
   if (req.mode === 'navigate') {
     event.respondWith(
       fetch(req)
-        .then(res => { if (res.ok) { const copy = res.clone(); caches.open(VERSION).then(c => c.put('./hikizan.html', copy)); } return res; })
-        .catch(() => caches.match('./hikizan.html'))
+        .then(res => { if (res.ok) { const copy = res.clone(); caches.open(VERSION).then(c => c.put(PAGE, copy)); } return res; })
+        .catch(() => caches.match(PAGE))
     );
     return;
   }
