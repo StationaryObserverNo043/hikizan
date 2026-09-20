@@ -1,21 +1,29 @@
 {
   "id": "./",
-  "name": "ヒキザン｜予算管理",
-  "short_name": "ヒキザン｜予算管理",
-  "description": "「使っていい金額」を決めて、無理なくお金を管理する予算管理アプリ。予算から使った分を引いて、あといくら使えるかがすぐ分かります。",
+  "name": "イマヤル｜タスク完了アプリ",
+  "short_name": "イマヤル",
+  "description": "やることを決めて、タイマーをスタート。画面が真っ暗になり、終わるまで止められない。だから、ちゃんとやれる。",
   "lang": "ja",
   "dir": "ltr",
-  "start_url": "./",
+  "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f7f3ea",
-  "theme_color": "#f7f3ea",
-  "categories": ["finance", "lifestyle"],
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["productivity", "utilities"],
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "icon-192.png",      "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png",      "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "maskable-192.png",  "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "maskable-512.png",  "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "すぐはじめる",
+      "short_name": "はじめる",
+      "url": "./?start=1&source=shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
   ]
 }
