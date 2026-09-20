@@ -3,7 +3,7 @@
    ・家計データ（IndexedDB）には触りません。通信もしません。
    ・アプリ本体は index.html です（GitHub Pages では https://ユーザー名.github.io/hikizan/ で開きます）。
    ・アイコンや名前（manifest）を変えたときは、下の VERSION を書きかえてください（古い保存が入れかわります）。 */
-const VERSION = 'hikizan-v3';
+const VERSION = 'hikizan-v4';
 const PAGE = './index.html';
 const CORE = [
   PAGE,
